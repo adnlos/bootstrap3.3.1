@@ -3,22 +3,55 @@
 // --------------------------------------------------
 
 
+
+
 //== Colors
+
+
+@blueblack: #233245;
+@bluehi: #32517f;
+@bluelo: #0497df;
+@grayapp: #eef1f7;
+@greenapp: #07d621;
+@redapp: #73010a;
+@orangeapp: #d61615;
+
+@greeninfo: #05B770;
+
+
+@grayone: #556270;
+@graytwo: #677a81;
+@graythree: #bbc4c5;
+
 //
 //## Gray and brand colors for use across Bootstrap.
 
 @gray-base:              #000;
+
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
+//@gray-darker:            @grayone;
+
 @gray-dark:              lighten(@gray-base, 20%);   // #333
+//@gray-dark:              @graytwo;
+
 @gray:                   lighten(@gray-base, 33.5%); // #555
 @gray-light:             lighten(@gray-base, 46.7%); // #777
 @gray-lighter:           lighten(@gray-base, 93.5%); // #eee
 
-@brand-primary:         darken(#428bca, 6.5%); // #337ab7
-@brand-success:         #5cb85c;
-@brand-info:            #5bc0de;
-@brand-warning:         #f0ad4e;
-@brand-danger:          #d9534f;
+//@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-primary: @bluehi;
+
+//@brand-success:         #5cb85c;
+@brand-success:         @greenapp;
+
+//@brand-info:            #5bc0de;
+@brand-info:            @bluelo;
+
+//@brand-warning:         #f0ad4e;
+@brand-warning:         @orangeapp;
+
+//@brand-danger:          #d9534f;
+@brand-danger:          @redapp;
 
 
 //== Scaffolding
@@ -26,9 +59,10 @@
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               #fff;
+@body-bg:               @grayapp;
+
 //** Global text color on `<body>`.
-@text-color:            @gray-dark;
+@text-color:            @blueblack;
 
 //** Global textual link color.
 @link-color:            @brand-primary;
@@ -44,11 +78,13 @@
 
 @font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
+
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          14px;
+@font-size-base:          13px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 
@@ -87,8 +123,8 @@
 //
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
 
-@padding-base-vertical:     6px;
-@padding-base-horizontal:   12px;
+@padding-base-vertical:     5px;
+@padding-base-horizontal:   10px;
 
 @padding-large-vertical:    10px;
 @padding-large-horizontal:  16px;
@@ -102,9 +138,9 @@
 @line-height-large:         1.3333333; // extra decimals for Win 8.1 Chrome
 @line-height-small:         1.5;
 
-@border-radius-base:        4px;
-@border-radius-large:       6px;
-@border-radius-small:       3px;
+@border-radius-base:        0;
+@border-radius-large:       0;
+@border-radius-small:       0;
 
 //** Global color for active items (e.g., navs or dropdowns).
 @component-active-color:    #fff;
@@ -359,21 +395,28 @@
 // Basics of a navbar
 @navbar-height:                    50px;
 @navbar-margin-bottom:             @line-height-computed;
+
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 @navbar-collapse-max-height:       340px;
 
-@navbar-default-color:             #777;
-@navbar-default-bg:                #f8f8f8;
+//@navbar-default-color:             #777;
+//@navbar-default-bg:                #f8f8f8;
+
+@navbar-default-color:             #ffffff;
+@navbar-default-bg:                @bluehi;
 @navbar-default-border:            darken(@navbar-default-bg, 6.5%);
 
 // Navbar links
-@navbar-default-link-color:                #777;
-@navbar-default-link-hover-color:          #333;
+@navbar-default-link-color:                @grayapp;
+@navbar-default-link-hover-color:          #ffffff;
 @navbar-default-link-hover-bg:             transparent;
-@navbar-default-link-active-color:         #555;
-@navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
+@navbar-default-link-active-color:         @bluehi;
+
+@navbar-default-link-active-bg:            #ffffff;
+//@navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
+
 @navbar-default-link-disabled-color:       #ccc;
 @navbar-default-link-disabled-bg:          transparent;
 
@@ -470,7 +513,7 @@
 
 @pager-bg:                             @pagination-bg;
 @pager-border:                         @pagination-border;
-@pager-border-radius:                  15px;
+@pager-border-radius:                  0;
 
 @pager-hover-bg:                       @pagination-hover-bg;
 
@@ -496,20 +539,20 @@
 //
 //## Define colors for form feedback states and, by default, alerts.
 
-@state-success-text:             #3c763d;
-@state-success-bg:               #dff0d8;
+@state-success-text:             #ffffff;
+@state-success-bg:               @greeninfo;
 @state-success-border:           darken(spin(@state-success-bg, -10), 5%);
 
-@state-info-text:                #31708f;
-@state-info-bg:                  #d9edf7;
+@state-info-text:                #ffffff;
+@state-info-bg:                  @bluelo;
 @state-info-border:              darken(spin(@state-info-bg, -10), 7%);
 
-@state-warning-text:             #8a6d3b;
-@state-warning-bg:               #fcf8e3;
+@state-warning-text:             #ffffff;
+@state-warning-bg:               @orangeapp;
 @state-warning-border:           darken(spin(@state-warning-bg, -10), 5%);
 
-@state-danger-text:              #a94442;
-@state-danger-bg:                #f2dede;
+@state-danger-text:              #ffffff;
+@state-danger-bg:                @redapp;
 @state-danger-border:            darken(spin(@state-danger-bg, -10), 5%);
 
 
@@ -603,7 +646,7 @@
 @modal-content-fallback-border-color:          #999;
 
 //** Modal backdrop background color
-@modal-backdrop-bg:           #000;
+@modal-backdrop-bg:           @blueblack;
 //** Modal backdrop opacity
 @modal-backdrop-opacity:      .5;
 //** Modal header border color
@@ -712,9 +755,9 @@
 @panel-inner-border:          #ddd;
 @panel-footer-bg:             #f5f5f5;
 
-@panel-default-text:          @gray-dark;
+@panel-default-text:          #ffffff;
 @panel-default-border:        #ddd;
-@panel-default-heading-bg:    #f5f5f5;
+@panel-default-heading-bg:    @bluelo;
 
 @panel-primary-text:          #fff;
 @panel-primary-border:        @brand-primary;
