@@ -5,6 +5,18 @@
 
 
 
+//otros colores no oficiales
+@default-danger       : #ff3c7e;
+@default-dark         : #313435;
+@default-grey         : #565a5c;
+@default-info         : #0f9aee;
+@default-primary      : #7774e7;
+@default-success      : #37c936;
+@default-text-color   : #72777a;
+@default-warning      : #fc0;
+@default-white        : #fff;
+
+@border-color         : #e6ecf5;
 //== Colors
 
 
@@ -15,18 +27,16 @@
 @greenapp: #07d621;
 @redapp: #73010a;
 @orangeapp: #d61615;
-
 @greeninfo: #05B770;
-
-
 @grayone: #556270;
 @graytwo: #677a81;
 @graythree: #bbc4c5;
 
+
 //
 //## Gray and brand colors for use across Bootstrap.
 
-@gray-base:              #000;
+@gray-base:              @default-grey;
 
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
 //@gray-darker:            @grayone;
@@ -59,17 +69,18 @@
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               @grayapp;
+@body-bg:               #FFFFFF;
 
 //** Global text color on `<body>`.
 @text-color:            @blueblack;
 
 //** Global textual link color.
-@link-color:            @brand-primary;
+@link-color:            @bluelo;
 //** Link hover color set via `darken()` function.
-@link-hover-color:      darken(@link-color, 15%);
+@link-hover-color:      darken(@link-color, 105%);
 //** Link hover decoration.
-@link-hover-decoration: underline;
+// @link-hover-decoration: underline;
+@link-hover-decoration: none;
 
 
 //== Typography
@@ -82,9 +93,13 @@
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 
-@font-family-base:        @font-family-sans-serif;
+@font-family-roboto: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 
-@font-size-base:          13px;
+
+@font-family-base:        @font-family-roboto;
+
+@font-size-base:          14px;
+// @font-size-base:          0.875rem;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 
@@ -96,14 +111,15 @@
 @font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
 
 //** Unit-less `line-height` for use in components like buttons.
-@line-height-base:        1.428571429; // 20/14
+// @line-height-base:        1.428571429; // 20/14
+@line-height-base:        1.5; // 20/14
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
 
 //** By default, this inherits from the `<body>`.
 @headings-font-family:    inherit;
 @headings-font-weight:    500;
-@headings-line-height:    1.1;
+@headings-line-height:    1.5;
 @headings-color:          inherit;
 
 
@@ -899,7 +915,8 @@
 //** Abbreviations and acronyms border color
 @abbr-border-color:           @gray-light;
 //** Headings small color
-@headings-small-color:        @gray-light;
+// @headings-small-color:        @gray-light;
+@headings-small-color:        @default-grey;
 //** Blockquote small color
 @blockquote-small-color:      @gray-light;
 //** Blockquote font size
@@ -913,4 +930,4 @@
 //** Point at which .dl-horizontal becomes horizontal
 @dl-horizontal-breakpoint:    @grid-float-breakpoint;
 //** Horizontal line color.
-@hr-border:                   @gray-lighter;
+@hr-border:                   @border-color;

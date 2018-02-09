@@ -293,7 +293,7 @@ module.exports = function (grunt) {
     connect: {
       server: {
         options: {
-          port: 3000,
+          port: 3004,
           base: '.'
         }
       }
@@ -385,7 +385,7 @@ module.exports = function (grunt) {
       },
       less: {
         files: 'less/**/*.less',
-        tasks: 'less'
+        tasks: ['less', 'copy:docs']
       }
     },
 

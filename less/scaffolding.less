@@ -20,8 +20,11 @@
 // Body reset
 
 html {
-  font-size: 10px;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html, html a, body {
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -48,6 +51,7 @@ textarea {
 a {
   color: @link-color;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
 
   &:hover,
   &:focus {
@@ -111,8 +115,8 @@ img {
 // Horizontal rules
 
 hr {
-  margin-top:    @line-height-computed;
-  margin-bottom: @line-height-computed;
+  // margin-top:    @line-height-computed;
+  // margin-bottom: @line-height-computed;
   border: 0;
   border-top: 1px solid @hr-border;
 }
