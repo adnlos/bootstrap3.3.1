@@ -141,7 +141,7 @@
 //## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
 
 //** Load fonts from this directory.
-@icon-font-path:          "../fonts/";
+@icon-font-path:          "../../fonts/";
 //** File name for all font files.
 @icon-font-name:          "glyphicons-halflings-regular";
 //** Element ID within SVG icon file.
@@ -167,7 +167,7 @@
 @line-height-large:         1.3333333; // extra decimals for Win 8.1 Chrome
 @line-height-small:         1.5;
 
-@border-radius-base:        3px;
+@border-radius-base:        1px;
 @border-radius-large:       0;
 @border-radius-small:       0;
 
@@ -240,20 +240,23 @@
 @btn-border-radius-large:        @border-radius-large;
 @btn-border-radius-small:        @border-radius-small;
 
-
+// =================================================================================================================================================================
 //== Forms
-//
-//##
+// =================================================================================================================================================================
 
 //** `<input>` background color
 @input-bg:                       #fff;
+
 //** `<input disabled>` background color
 @input-bg-disabled:              @gray-lighter;
 
 //** Text color for `<input>`s
-@input-color:                    @gray;
+// @input-color:                    @gray;
+@input-color:                    @grayone;
+
 //** `<input>` border color
 @input-border:                   #ccc;
+// @input-border:                   @graytwo;
 
 // TODO: Rename `@input-border-radius` to `@input-border-radius-base` in v4
 //** Default `.form-control` border radius
@@ -265,10 +268,13 @@
 @input-border-radius-small:      @border-radius-small;
 
 //** Border color for inputs on focus
-@input-border-focus:             #66afe9;
+// @input-border-focus:             #66afe9;
+@input-border-focus:            @bluelo;
+
 
 //** Placeholder text color
-@input-color-placeholder:        #999;
+// @input-color-placeholder:        #999;
+@input-color-placeholder:       @graythree;
 
 //** Default `.form-control` height
 @input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);

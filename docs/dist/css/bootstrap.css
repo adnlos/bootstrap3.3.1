@@ -254,8 +254,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('../../fonts/glyphicons-halflings-regular.eot');
+  src: url('../../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -1067,8 +1067,8 @@ th {
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/fa-regular-400.eot');
-  src: url('../fonts/fa-regular-400.eot?#iefix') format('embedded-opentype'), url('../fonts/fa-regular-400.woff2') format('woff2'), url('../fonts/fa-regular-400.woff') format('woff'), url('../fonts/fa-regular-400.ttf') format('truetype'), url('../fonts/fa-regular-400.svg#fontawesome') format('svg');
+  src: url('../../fonts/fa-regular-400.eot');
+  src: url('../../fonts/fa-regular-400.eot?#iefix') format('embedded-opentype'), url('../../fonts/fa-regular-400.woff2') format('woff2'), url('../../fonts/fa-regular-400.woff') format('woff'), url('../../fonts/fa-regular-400.ttf') format('truetype'), url('../../fonts/fa-regular-400.svg#fontawesome') format('svg');
 }
 .far {
   font-family: 'Font Awesome 5 Free';
@@ -1082,8 +1082,8 @@ th {
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 900;
-  src: url('../fonts/fa-solid-900.eot');
-  src: url('../fonts/fa-solid-900.eot?#iefix') format('embedded-opentype'), url('../fonts/fa-solid-900.woff2') format('woff2'), url('../fonts/fa-solid-900.woff') format('woff'), url('../fonts/fa-solid-900.ttf') format('truetype'), url('../fonts/fa-solid-900.svg#fontawesome') format('svg');
+  src: url('../../fonts/fa-solid-900.eot');
+  src: url('../../fonts/fa-solid-900.eot?#iefix') format('embedded-opentype'), url('../../fonts/fa-solid-900.woff2') format('woff2'), url('../../fonts/fa-solid-900.woff') format('woff'), url('../../fonts/fa-solid-900.ttf') format('truetype'), url('../../fonts/fa-solid-900.svg#fontawesome') format('svg');
 }
 .fa,
 .fas {
@@ -1098,8 +1098,8 @@ th {
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: normal;
-  src: url('../fonts/fa-brands-400.eot');
-  src: url('../fonts/fa-brands-400.eot?#iefix') format('embedded-opentype'), url('../fonts/fa-brands-400.woff2') format('woff2'), url('../fonts/fa-brands-400.woff') format('woff'), url('../fonts/fa-brands-400.ttf') format('truetype'), url('../fonts/fa-brands-400.svg#fontawesome') format('svg');
+  src: url('../../fonts/fa-brands-400.eot');
+  src: url('../../fonts/fa-brands-400.eot?#iefix') format('embedded-opentype'), url('../../fonts/fa-brands-400.woff2') format('woff2'), url('../../fonts/fa-brands-400.woff') format('woff'), url('../../fonts/fa-brands-400.ttf') format('truetype'), url('../../fonts/fa-brands-400.svg#fontawesome') format('svg');
 }
 .fab {
   font-family: 'Font Awesome 5 Brands';
@@ -5219,7 +5219,7 @@ output {
   padding-top: 7px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #acafb1;
+  color: #556270;
 }
 .form-control {
   display: block;
@@ -5228,7 +5228,7 @@ output {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #acafb1;
+  color: #556270;
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
@@ -5240,20 +5240,20 @@ output {
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .form-control:focus {
-  border-color: #66afe9;
+  border-color: #0497df;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(4, 151, 223, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(4, 151, 223, 0.6);
 }
 .form-control::-moz-placeholder {
-  color: #999;
+  color: #bbc4c5;
   opacity: 1;
 }
 .form-control:-ms-input-placeholder {
-  color: #999;
+  color: #bbc4c5;
 }
 .form-control::-webkit-input-placeholder {
-  color: #999;
+  color: #bbc4c5;
 }
 .form-control::-ms-expand {
   border: 0;
@@ -6570,7 +6570,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-size: 14px;
   font-weight: normal;
   line-height: 1;
-  color: #acafb1;
+  color: #556270;
   text-align: center;
   background-color: #ffffff;
   border: 1px solid #ccc;
@@ -8562,6 +8562,7 @@ button.close {
   margin: 10px;
 }
 .modal-content {
+  margin-top: 80px;
   position: relative;
   background-color: #fff;
   border: 1px solid #999;
